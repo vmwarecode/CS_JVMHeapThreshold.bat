@@ -1,8 +1,19 @@
 # CS_JVMHeapThreshold.bat
 
-CAUTION: It is highly recommended to test this registry change script in test environment to ensure it works for your environment!
+*** USE THIS TOOL ONLY WHEN VMWARE GSS/ENGINEERING RECOMMENDS MODIFYING DEFAULT VALUES OF JVM HEAP MEMORY TO CUSTOM VALUE. ***
+
+CAUTION: It is highly recommended to test this registry change script in test environment to ensure it works for your environment! 
 
 It is NOT recommended to set more than 8 GB to tomcat services in connection server. So far only the MessageBusServices and TomcatServices were modified to higher values in some of the customer environments. This script is written to avoid manual modification of registry.
+
+Maximum or safe limits of Heap memory for horizon services. It is important that system has enough RAM to allocate below heap memory.
+
+TomcatService : 8 GB
+
+MessageBusService: 4 GB
+
+TunnelService: 4 GB
+
 
 Utility to set custom JVM threshold values on connection server.
 
